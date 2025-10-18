@@ -2,7 +2,7 @@ title: "John Walker"
 description: "DPhil Economics, Oxford University | Development Economics, Social Protection, Mental Health"
 baseurl: ""
 url: "https://johnwalkerecon.github.io"
-theme: minima
+theme: null
 author:
   name: "John Walker"
   email: "john.walker@nuffield.ox.ac.uk"
