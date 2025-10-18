@@ -1,0 +1,40 @@
+title: "John Walker"
+description: "DPhil Economics, Oxford University | Development Economics, Social Protection, Mental Health"
+baseurl: ""
+url: "https://johnwalkerecon.github.io"
+theme: minima
+author:
+  name: "John Walker"
+  email: "john.walker@nuffield.ox.ac.uk"
+markdown: kramdown
+highlighter: rouge
+
+collections:
+  research:
+    output: true
+  teaching:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "teaching"
+    values:
+      layout: page
+
+nav:
+  - name: "Home"
+    link: "/"
+  - name: "Research"
+    link: "/research/"
+  - name: "Teaching"
+    link: "/teaching/"
+  - name: "CV"
+    link: "/cv/"
+  - name: "Work in Progress"
+    link: "/work-in-progress/"
