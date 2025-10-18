@@ -2,6 +2,7 @@ title: "John Walker"
 description: "DPhil Economics, Oxford University | Development Economics, Social Protection, Mental Health"
 baseurl: ""
 url: "https://johnwalkerecon.github.io"
+# Disable the default Minima theme so our custom layouts are used
 theme: null
 author:
   name: "John Walker"
@@ -9,24 +10,36 @@ author:
 markdown: kramdown
 highlighter: rouge
 
+# Define our custom content collections and make sure they are output as separate sections.
 collections:
   research:
     output: true
   teaching:
     output: true
+  work-in-progress:
+    output: true
+    permalink: /work-in-progress/:title/
 
+# Set default layouts for each collection to our custom 'default' layout.  
+# Without this Jekyll would look for non-existent 'page' or 'post' layouts.
 defaults:
   - scope:
       path: ""
       type: "research"
     values:
-      layout: page
+      layout: default
   - scope:
       path: ""
       type: "teaching"
     values:
-      layout: page
+      layout: default
+  - scope:
+      path: ""
+      type: "work-in-progress"
+    values:
+      layout: default
 
+# Navigation items for the top menu
 nav:
   - name: "Home"
     link: "/"
