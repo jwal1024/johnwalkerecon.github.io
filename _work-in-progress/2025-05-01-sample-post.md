@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "General Equilibrium Effects of Universal Cash Transfers: Experimental Evidence At-Scale from Malawi"
 ---
 
