@@ -7,9 +7,15 @@ title: Teaching
 
 {% if site.teaching and site.teaching.size > 0 %}
 {% for item in site.teaching %}
-<section>
-  <h3>{{ item.title }}</h3>
-  {{ item.content }}
+<section class="entry">
+  <h3 class="entry-title">{{ item.title }}</h3>
+  <p class="entry-meta">
+    {% if item.institution %}<span>{{ item.institution }}</span>{% endif %}
+    {% if item.role %}<span>{{ item.role }}</span>{% endif %}
+    {% if item.terms %}<span>{{ item.terms }}</span>{% endif %}
+    {% if item.instructor %}<span>{{ item.instructor }}</span>{% endif %}
+  </p>
+  <p class="entry-abstract">{{ item.content | strip_html }}</p>
 </section>
 {% endfor %}
 {% else %}

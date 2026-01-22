@@ -23,3 +23,9 @@ Development economics focusing on how large-scale experiments can inform underst
 - **Garlick, Walker & Orkin (2025)** — *Heterogeneity in Effects of Poverty-Alleviating Interventions*, *AEA Papers & Proceedings*.
 
 See full list under [Research]({{ '/research/' | relative_url }}).
+
+---
+
+### Contact
+Oxford University, Nuffield College  
+[john.walker@nuffield.ox.ac.uk](mailto:john.walker@nuffield.ox.ac.uk)

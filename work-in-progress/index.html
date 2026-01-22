@@ -7,9 +7,12 @@ title: Work in Progress
 
 {% if site.work-in-progress and site.work-in-progress.size > 0 %}
 {% for item in site.work-in-progress %}
-<section>
-  <h3>{{ item.title }}</h3>
-  {{ item.content }}
+<section class="entry">
+  <h3 class="entry-title">{{ item.title }}</h3>
+  <p class="entry-meta">
+    {% if item.coauthors %}<span>{{ item.coauthors }}</span>{% endif %}
+  </p>
+  <p class="entry-abstract">{{ item.content | strip_html }}</p>
 </section>
 {% endfor %}
 {% else %}

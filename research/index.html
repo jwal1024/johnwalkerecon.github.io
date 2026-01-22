@@ -5,13 +5,33 @@ title: Research
 
 <h1>Research</h1>
 
-{% if site.research and site.research.size > 0 %}
-{% for item in site.research %}
-<section>
-  <h3>{{ item.title }}</h3>
-  {{ item.content }}
-</section>
+{% assign has_items = false %}
+{% assign statuses = "Published|Working Papers|Work in Progress" | split: "|" %}
+
+{% for status in statuses %}
+  {% assign items = site.research | where: "status", status %}
+  {% if items.size > 0 %}
+    {% assign has_items = true %}
+    <h2>{{ status }}</h2>
+    {% for item in items %}
+      <section class="entry">
+        <h3 class="entry-title">{{ item.title }}</h3>
+        <p class="entry-meta">
+          {% if item.authors %}<span>{{ item.authors }}</span>{% endif %}
+          {% if item.year %}<span>({{ item.year }})</span>{% endif %}
+          {% if item.venue %}<span>{{ item.venue }}</span>{% endif %}
+        </p>
+        {% if item.pdf and item.pdf != "" %}
+          <p><a href="{{ item.pdf | relative_url }}">Download PDF</a></p>
+        {% else %}
+          <p><em>PDF available on request.</em></p>
+        {% endif %}
+        <p class="entry-abstract"><strong>Abstract:</strong> {{ item.content | strip_html }}</p>
+      </section>
+    {% endfor %}
+  {% endif %}
 {% endfor %}
-{% else %}
-<p>No research items yet.</p>
+
+{% if has_items == false %}
+  <p>No research items yet.</p>
 {% endif %}

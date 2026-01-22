@@ -6,7 +6,7 @@ permalink: /cv/
 
 # Curriculum Vitae
 
-[Download full CV (PDF)](John_Walker_CV.pdf)
+CV PDF available on request.
 
 ---
 
