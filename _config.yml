@@ -1,6 +1,6 @@
 title: "John Walker"
 description: "DPhil Economics, Oxford University | Development Economics, Social Protection, Mental Health"
-baseurl: "/johnwalkerecon.github.io"
+baseurl: ""
 url: "https://jwal1024.github.io"
 # Disable the default Minima theme so our custom layouts are used
 theme: null
