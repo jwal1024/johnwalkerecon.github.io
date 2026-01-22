@@ -12,13 +12,14 @@ title: Home
 ---
 
 ### Research Interests
-Development economics with a focus on social protection and mental health.  
-Secondary interests in computational econometrics and machine learning for causal inference.
+Development economics focusing on how large-scale experiments can inform understanding of structural change:
+- Experimentation at country-level scale
+- New theory on behavioural mechanisms in scale-up
+- Differential gendered constraints
 
 ---
 
-### Recent Publications
+### Selected Publications
 - **Garlick, Walker & Orkin (2025)** — *Heterogeneity in Effects of Poverty-Alleviating Interventions*, *AEA Papers & Proceedings*.
-- **Waller et al. (2020)** — *Effect of language and country of birth on the consent process and medical suitability of potential organ donors*, *Journal of Critical Care*.
 
-See full list under [Research](/research/).
+See full list under [Research]({{ '/research/' | relative_url }}).
