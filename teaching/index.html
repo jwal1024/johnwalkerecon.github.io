@@ -1,0 +1,17 @@
+---
+layout: default
+title: Teaching
+---
+
+<h1>Teaching</h1>
+
+{% if site.teaching and site.teaching.size > 0 %}
+{% for item in site.teaching %}
+<section>
+  <h3>{{ item.title }}</h3>
+  {{ item.content }}
+</section>
+{% endfor %}
+{% else %}
+<p>No teaching items yet.</p>
+{% endif %}
