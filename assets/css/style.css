@@ -37,6 +37,32 @@ main {
 .hero h1 {
   margin: 0 0 0.5rem 0;
 }
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.cta {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: #0a4d8c;
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.cta:hover {
+  text-decoration: none;
+  background: #083e72;
+}
+.cta-secondary {
+  background: #eef2f7;
+  color: #0a4d8c;
+}
+.cta-secondary:hover {
+  background: #e1e7f0;
+}
 .headshot {
   width: 140px;
   max-width: 140px;
@@ -84,6 +110,12 @@ section:first-of-type {
 }
 .entry-abstract {
   margin-top: 0.6rem;
+}
+.entry-links {
+  margin-top: 0.5rem;
+}
+.entry-links a {
+  margin-right: 0.75rem;
 }
 nav ul {
   display: flex;

@@ -6,7 +6,7 @@ permalink: /cv/
 
 # Curriculum Vitae
 
-CV PDF available on request.
+[Download CV (PDF)]({{ '/assets/Walker_CV_26.pdf' | relative_url }})
 
 ---
 
@@ -18,7 +18,7 @@ CV PDF available on request.
 
 ---
 
-## Selected Grants
+## Selected Funding
 - GiveWell (with Egger & Graff) — USD 500k (2025)  
 - FTX Future Fund — USD 5k (2022)  
 - New Colombo Plan Fellowship — USD 70k (2018–2021)

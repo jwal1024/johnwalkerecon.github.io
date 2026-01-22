@@ -10,10 +10,21 @@ title: Work in Progress
 <section class="entry">
   <h3 class="entry-title">{{ item.title }}</h3>
   <p class="entry-meta">
-    {% if item.coauthors %}<span>{{ item.coauthors }}</span>{% endif %}
-    {% if item.stage %}<span>{{ item.stage }}</span>{% endif %}
+    {% if item.coauthors %}<span><strong>Authors:</strong> {{ item.coauthors }}</span>{% endif %}
+    {% if item.stage %}<span><strong>Status:</strong> {{ item.stage }}</span>{% endif %}
   </p>
-  <p class="entry-abstract">{{ item.content | strip_html }}</p>
+  <p class="entry-abstract"><strong>Abstract:</strong> {{ item.content | strip_html }}</p>
+  {% assign has_links = false %}
+  {% if item.pdf and item.pdf != "" %}{% assign has_links = true %}{% endif %}
+  {% if item.slides and item.slides != "" %}{% assign has_links = true %}{% endif %}
+  {% if item.memo and item.memo != "" %}{% assign has_links = true %}{% endif %}
+  {% if has_links %}
+    <p class="entry-links">
+      {% if item.pdf and item.pdf != "" %}<a href="{{ item.pdf | relative_url }}">PDF</a>{% endif %}
+      {% if item.slides and item.slides != "" %}<a href="{{ item.slides | relative_url }}">Slides</a>{% endif %}
+      {% if item.memo and item.memo != "" %}<a href="{{ item.memo | relative_url }}">Memo</a>{% endif %}
+    </p>
+  {% endif %}
 </section>
 {% endfor %}
 {% else %}

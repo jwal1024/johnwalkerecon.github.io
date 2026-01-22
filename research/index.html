@@ -21,12 +21,23 @@ title: Research
           {% if item.year %}<span>({{ item.year }})</span>{% endif %}
           {% if item.venue %}<span>{{ item.venue }}</span>{% endif %}
         </p>
-        {% if item.pdf and item.pdf != "" %}
-          <p><a href="{{ item.pdf | relative_url }}">Download PDF</a></p>
-        {% else %}
-          <p><em>PDF available on request.</em></p>
+        {% if item.contribution %}
+          <p class="entry-abstract"><strong>Contribution:</strong> {{ item.contribution }}</p>
         {% endif %}
         <p class="entry-abstract"><strong>Abstract:</strong> {{ item.content | strip_html }}</p>
+        {% assign has_links = false %}
+        {% if item.pdf and item.pdf != "" %}{% assign has_links = true %}{% endif %}
+        {% if item.slides and item.slides != "" %}{% assign has_links = true %}{% endif %}
+        {% if item.appendix and item.appendix != "" %}{% assign has_links = true %}{% endif %}
+        {% if item.replication and item.replication != "" %}{% assign has_links = true %}{% endif %}
+        {% if has_links %}
+          <p class="entry-links">
+            {% if item.pdf and item.pdf != "" %}<a href="{{ item.pdf | relative_url }}">PDF</a>{% endif %}
+            {% if item.slides and item.slides != "" %}<a href="{{ item.slides | relative_url }}">Slides</a>{% endif %}
+            {% if item.appendix and item.appendix != "" %}<a href="{{ item.appendix | relative_url }}">Appendix</a>{% endif %}
+            {% if item.replication and item.replication != "" %}<a href="{{ item.replication | relative_url }}">Replication</a>{% endif %}
+          </p>
+        {% endif %}
       </section>
     {% endfor %}
   {% endif %}
