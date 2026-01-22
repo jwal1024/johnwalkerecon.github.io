@@ -38,18 +38,18 @@ main {
   margin: 0 0 0.5rem 0;
 }
 .headshot {
-  width: 40px;
-  max-width: 40px;
+  width: 80px;
+  max-width: 80px;
   height: auto;
-  flex: 0 0 40px;
+  flex: 0 0 80px;
   border-radius: 8px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 @media (max-width: 600px) {
   .headshot {
-    width: 40px;
-    max-width: 40px;
-    flex-basis: 40px;
+    width: 80px;
+    max-width: 80px;
+    flex-basis: 80px;
   }
 }
 h1, h2, h3 {
