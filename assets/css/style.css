@@ -38,10 +38,19 @@ main {
   margin: 0 0 0.5rem 0;
 }
 .headshot {
-  width: 140px;
-  max-width: 100%;
+  width: 120px;
+  max-width: 120px;
+  height: auto;
+  flex: 0 0 120px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+@media (max-width: 600px) {
+  .headshot {
+    width: 96px;
+    max-width: 96px;
+    flex-basis: 96px;
+  }
 }
 h1, h2, h3 {
   font-family: 'EB Garamond', serif;
