@@ -38,11 +38,11 @@ main {
   margin: 0 0 0.5rem 0;
 }
 .headshot {
-  width: 120px;
-  max-width: 120px;
+  width: 10px;
+  max-width: 10px;
   height: auto;
-  flex: 0 0 120px;
-  border-radius: 12px;
+  flex: 0 0 10px;
+  border-radius: 2px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 @media (max-width: 600px) {
