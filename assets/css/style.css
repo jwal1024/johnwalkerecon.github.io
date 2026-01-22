@@ -26,6 +26,21 @@ header h1 {
 main {
   padding: 0 0 1.5rem 0;
 }
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+.hero h1 {
+  margin: 0 0 0.5rem 0;
+}
+.headshot {
+  width: 180px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
 h1, h2, h3 {
   font-family: 'EB Garamond', serif;
   color: #121212;

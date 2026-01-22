@@ -11,6 +11,7 @@ title: Work in Progress
   <h3 class="entry-title">{{ item.title }}</h3>
   <p class="entry-meta">
     {% if item.coauthors %}<span>{{ item.coauthors }}</span>{% endif %}
+    {% if item.stage %}<span>{{ item.stage }}</span>{% endif %}
   </p>
   <p class="entry-abstract">{{ item.content | strip_html }}</p>
 </section>

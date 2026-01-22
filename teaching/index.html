@@ -15,7 +15,7 @@ title: Teaching
     {% if item.terms %}<span>{{ item.terms }}</span>{% endif %}
     {% if item.instructor %}<span>{{ item.instructor }}</span>{% endif %}
   </p>
-  <p class="entry-abstract">{{ item.content | strip_html }}</p>
+  <p class="entry-abstract"><strong>Summary:</strong> {{ item.content | strip_html }}</p>
 </section>
 {% endfor %}
 {% else %}
