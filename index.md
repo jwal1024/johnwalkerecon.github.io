@@ -44,3 +44,12 @@ See full list under [Research]({{ '/research/' | relative_url }}).
 
 ### Working Papers
 - **Lund, C., Orkin, K., Witte, M., Walker, J., ... Haushofer, J. (2024).** *The effects of mental health interventions on labor market outcomes in low- and middle-income countries.* NBER Working Paper No. 32423, May.
+
+---
+
+### Selected Grants
+- Livelihood Impact Fund with Dennis Egger and others (USD 1.42m)
+- GiveDirectly with Dennis Egger and others (USD 350k)
+- GiveWell with Dennis Egger (Oxford), Tilman Graff (Harvard) (USD 350k)
+- JPAL - Jobs Initiative (USD 75k)
+- New Colombo Plan Fellowship (USD 70k)
